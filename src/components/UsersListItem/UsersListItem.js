@@ -1,6 +1,8 @@
+import styles from './UserListItem.module.scss';
+
 const UsersListItem = ({ userData: { average, name, attendance = '0%' } }) => {
   return (
-    <li>
+    <li className={styles.user}>
       <div>{average}</div>
       <div>
         <p>{name}</p>
